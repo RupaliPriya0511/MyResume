@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+.header {
+    background-color: lightgray; /* Dark blue color */
+    color: rgb(7, 7, 7);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.header img {
+    width: 100px;
+    height: 100px;
+    border-radius: 60%;
+}
+.header .info {
+    flex: 1;
+    font-size: 16px;
+}
+.header .info h1 {
+    margin: 0;
+    font-size: 25px;
+}
+.header .info p {
+    margin: 5px 0;
+}
+.social-links {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.social-links a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+}
+.social-links img {
+    width: 30px;
+    height: 30px;
+    margin-right: 25px;
+}
+/* Add a container for left and right margin */
+.container {
+    top: 10px auto; /* Adds top and bottom margin */
+    padding: 30px;
+    max-width: 100%; /* Limits the width of the content */
+    background-color: none;
+    /* border: 1px solid #ede1f7; Optional: Adds a light border */
+    /* box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); Optional: Adds slight shadow */
+}
+.education-heading {
+    font-size: 25px; /* Adjust to your preferred size */
+    font-weight: bold; /* Keep the bold styling */
+    color: #060707; /* Optional: Customize the color */
+    margin-bottom: 15px; /* Add some spacing below the heading */
+}
+.intro {
+    font-size: 20px; /* Adjust to your preferred size */
+    font-weight: bold; /* Keep the bold styling */
+    color: #585c5c; /* Optional: Customize the color */
+    margin-bottom: 15px;
+    
+}
+.background-section::before {
+    content: "";
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('images/NITlogo.png') no-repeat center;
+    background-size: 400px;
+    opacity: 0.22; 
+    z-index: -1; /* Send it behind the content */
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+}
+
+.experience-projects, .responsibilities-achievements {
+    margin: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.experience-projects h1, .responsibilities-achievements h1 {
+    font-size: 22px;
+    color: #333;
+}
+
+.experience-projects ul, .responsibilities-achievements ul {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+.experience-projects li, .responsibilities-achievements li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.skills-section {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+.skills-section ul {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+.skills-section h1 {
+    font-size: 22px;
+    color: #333;
+}
+.skills-section h1 {
+    margin: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
